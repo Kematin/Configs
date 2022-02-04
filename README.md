@@ -71,8 +71,50 @@ endif
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
+" copy (write) highlighted text to .vimbuffer
+vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+```
 
+## Fast binds for neovim
+```
+esc = visual mode
+: = console mode
+i = input mode
+```
 
-
-
+<b>Visual mode</b>
+```
+k = arrow up
+j = arrow down
+l = arrow right
+h = arrow left
+a = 1 symbol right and turn input mode
+A = go in end line and turn input mode
+o = create new under line and turn input mode
+O = create new upper line and turn input mode
+gg = enter in start line
+G = go in end line
+w = go in next word
+b = go in previous word
+u = Ctrl+Z
+right click = Ctrl+V
+[num][command] = command is executed num times (5l = go 5 symbol right)
+/[word] - find element (/555 - find 555)
+m[name] - create mark (mx - new mark with name x)
+`[name] - go in mark (`x - go in mark x)
+v + selection + x = delete selection
+dd = delete line
+cw = edit word
+yy = copy line
+y + selection = copy selection
+p = put line
+```
+<b>Console mode</b>
+```
+:q! = close file without saving
+:q = close file
+:w = write file
+:wq = write and quit
+:so % set init.vim
+:PlugInstall
 ```
