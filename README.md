@@ -1,5 +1,15 @@
-## Neovim config by kematin
+# Neovim config by kematin
+## Fast download
 
+<p>Download chocolatey</p>
+
+`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+<b>In Powershell with administrator privileges</b>
+<p>Download neovim</p>
+
+`choco install neovim` <b>In Powershell with administrator privileges</b> 
+
+## Config
 `~/AppData/Local/nvim/init.vim` file:
 
 ```
