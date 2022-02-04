@@ -13,7 +13,7 @@
 `~/AppData/Local/nvim/init.vim` file:
 
 ```
-mouse=a" enable mouse
+set mouse=a  "enable mouse
 set encoding=utf-8
 set number
 set noswapfile
@@ -38,6 +38,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'preservim/nerdtree'
+Plug 'mattn/emmet-vim'
 
 " color schemas
 Plug 'morhetz/gruvbox'  " colorscheme gruvbox
@@ -71,8 +72,9 @@ endif
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
-" copy (write) highlighted text to .vimbuffer
+
 vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
+
 ```
 
 ## Fast binds for neovim
