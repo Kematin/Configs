@@ -72,9 +72,15 @@ endif
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
-
 ```
 
 ## Fast binds for neovim
