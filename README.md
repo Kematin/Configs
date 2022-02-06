@@ -50,6 +50,8 @@ Plug 'https://github.com/ryanoasis/vim-devicons.git'
 " color schemas
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'flazz/vim-colorschemes'
+Plug 'https://github.com/xolox/vim-misc.git'
+Plug 'https://github.com/xolox/vim-colorscheme-switcher.git'
 
 " For JS/JSX
 Plug 'yuezk/vim-js'
@@ -70,9 +72,16 @@ if (has('termguicolors'))
 endif
 
 ""variants: mirage, dark, dark
-let ayucolor="mirage"
-colorscheme ayu
+" let ayucolor="mirage"
+" colorscheme ayu
 " colorscheme iceberg
+colorscheme Atelier_PlateauLight
+
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-z> :NERDTree<CR>
+nnoremap <C-x> :NERDTreeToggle<CR>
+
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-z> :NERDTree<CR>
