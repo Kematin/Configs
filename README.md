@@ -13,6 +13,7 @@
 `~/AppData/Local/nvim/init.vim` file:
 
 ```
+set relativenumber
 set mouse=a  "enable mouse
 set encoding=utf-8
 set number
@@ -37,8 +38,14 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
+
 Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'https://github.com/tpope/vim-commentary.git'
+" gcc - line, gc - selection (commentary)
+Plug 'https://github.com/ryanoasis/vim-devicons.git'
+
 
 " color schemas
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
@@ -65,11 +72,13 @@ endif
 ""variants: mirage, dark, dark
 let ayucolor="mirage"
 colorscheme ayu
-
+" colorscheme iceberg
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
+
+
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
