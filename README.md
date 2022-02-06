@@ -41,10 +41,8 @@ Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
 
 " color schemas
-Plug 'morhetz/gruvbox'  " colorscheme gruvbox
-Plug 'mhartington/oceanic-next'  " colorscheme OceanicNext
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'ayu-theme/ayu-vim'
+Plug 'flazz/vim-colorschemes'
 
 " For JS/JSX
 Plug 'yuezk/vim-js'
@@ -53,7 +51,6 @@ Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 
-colorscheme gruvbox
 " colorscheme OceanicNext
 "let g:material_terminal_italics = 1
 " variants: default, palenight, ocean, lighter, darker, default-community,
@@ -65,9 +62,10 @@ if (has('termguicolors'))
   set termguicolors
 endif
 
-" variants: mirage, dark, dark
-"let ayucolor="mirage"
-"colorscheme ayu
+""variants: mirage, dark, dark
+let ayucolor="mirage"
+colorscheme ayu
+
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-z> :NERDTree<CR>
