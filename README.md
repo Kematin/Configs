@@ -101,12 +101,13 @@ vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR
 
 ## Fast binds for neovim
 ```
-esc = visual mode
+esc = normal mode
+v = visual mode
 : = console mode
-i = input mode
+i = insert mode
 ```
 
-<b>Visual mode</b>
+<b>Normal mode</b>
 ```
 k = arrow up
 j = arrow down
