@@ -133,6 +133,9 @@ cw = edit word
 yy = copy line
 y + selection = copy selection
 p = put line
+
+q[symbol] - create macrose with name symbole
+@[symbol] - use macrose
 ```
 <b>Console mode</b>
 ```
