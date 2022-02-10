@@ -1,5 +1,5 @@
 # Neovim config by kematin
-## Fast download
+## Fast download (Windows)
 
 <p>Download chocolatey</p>
 
