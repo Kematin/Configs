@@ -11,10 +11,13 @@
 
 ## Fast download (MacOS)
 <p>Download homebrew</p>
+
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+
 <p>Download neovim</p>
+
 `brew install neovim`
-<b>In terminal</b>
+<p><b>In terminal</b></p>
 
 
 ## Config
