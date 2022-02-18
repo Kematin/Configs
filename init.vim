@@ -1,6 +1,6 @@
 `~/AppData/Local/nvim/init.vim` file:
 
-set relativenumber
+set relatvenumber
 set mouse=a  "enable mouse
 set encoding=utf-8
 set number
@@ -15,8 +15,7 @@ set autoindent
 set fileformat=unix
 filetype indent on      " load filetype-specific indent files
 
-inoremap jk <esc>
-
+imap jk <Esc>  
 
 call plug#begin('~/.vim/plugged')
 
@@ -59,28 +58,29 @@ if (has('termguicolors'))
 endif
 
 ""variants: mirage, dark, dark
-" let ayucolor="mirage"
-" colorscheme ayu
+let ayucolor="mirage"
+colorscheme ayu
 " colorscheme iceberg
-colorscheme Atelier_PlateauLight
+" colorscheme Atelier_PlateauLight
 
-
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-z> :NERDTree<CR>
-nnoremap <C-x> :NERDTreeToggle<CR>
-
+nnoremap <F1> :%y *<CR> " all text in buffer 
+inoremap <C-v> <ESC>"+pa
+vmap <F2> "+ygv " selection copy in buffer
 
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-z> :NERDTree<CR>
+noremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
 
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
 
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+inoremap < <><left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
-
-vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR><CR>
