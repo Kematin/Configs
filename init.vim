@@ -1,6 +1,4 @@
-`~/AppData/Local/nvim/init.vim` file:
-
-set relatvenumber
+set relativenumber
 set mouse=a  "enable mouse
 set encoding=utf-8
 set number
@@ -31,6 +29,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/tpope/vim-commentary.git'
 " gcc - line, gc - selection (commentary)
 Plug 'https://github.com/ryanoasis/vim-devicons.git'
+Plug 'https://github.com/tc50cal/vim-terminal.git'
 
 
 " color schemas
@@ -58,9 +57,9 @@ if (has('termguicolors'))
 endif
 
 ""variants: mirage, dark, dark
-let ayucolor="mirage"
-colorscheme ayu
-" colorscheme iceberg
+" let ayucolor="mirage"
+" colorscheme ayu
+colorscheme iceberg
 " colorscheme Atelier_PlateauLight
 
 nnoremap <F1> :%y *<CR> " all text in buffer 
@@ -70,6 +69,8 @@ vmap <F2> "+ygv " selection copy in buffer
 nnoremap <leader>n :NERDTreeFocus<CR>
 noremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
+
+nnoremap <F3> :TerminalVSplit bash<CR>
 
 nnoremap <Left> :echoe "Use h"<CR>
 nnoremap <Right> :echoe "Use l"<CR>
