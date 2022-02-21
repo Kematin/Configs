@@ -31,6 +31,8 @@ Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/ryanoasis/vim-devicons.git'
 Plug 'https://github.com/tc50cal/vim-terminal.git'
 
+Plug 'https://github.com/Shougo/neoinclude.vim.git'
+Plug 'zchee/deoplete-jedi'
 
 " color schemas
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
@@ -46,12 +48,12 @@ call plug#end()
 
 
 " colorscheme OceanicNext
-"let g:material_terminal_italics = 1
-" variants: default, palenight, ocean, lighter, darker, default-community,
-"           palenight-community, ocean-community, lighter-community,
-"           darker-community
-"let g:material_theme_style = 'darker'
-"colorscheme material
+" let g:material_terminal_italics = 1
+ " variants: default, palenight, ocean, lighter, darker, default-community,
+ "           palenight-community, ocean-community, lighter-community,
+ "           darker-community
+" let g:material_theme_style = 'darker'
+" colorscheme material
 if (has('termguicolors'))
   set termguicolors
 endif
