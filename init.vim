@@ -17,12 +17,6 @@ imap jk <Esc>
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'L3MON4D3/LuaSnip'
-
 Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
@@ -48,12 +42,12 @@ call plug#end()
 
 
 " colorscheme OceanicNext
-" let g:material_terminal_italics = 1
+let g:material_terminal_italics = 1
  " variants: default, palenight, ocean, lighter, darker, default-community,
  "           palenight-community, ocean-community, lighter-community,
  "           darker-community
-" let g:material_theme_style = 'darker'
-" colorscheme material
+let g:material_theme_style = 'darker-community'
+colorscheme material
 if (has('termguicolors'))
   set termguicolors
 endif
@@ -61,7 +55,7 @@ endif
 ""variants: mirage, dark, dark
 " let ayucolor="mirage"
 " colorscheme ayu
-colorscheme iceberg
+" colorscheme iceberg
 " colorscheme Atelier_PlateauLight
 
 nnoremap <F1> :%y *<CR> " all text in buffer 
@@ -87,3 +81,7 @@ inoremap { {}<left>
 inoremap < <><left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+" turn off search highlight
+nnoremap ,<space> :nohlsearch<CR>
+
