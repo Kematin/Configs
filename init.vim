@@ -17,8 +17,10 @@ imap jk <Esc>
 
 call plug#begin('~/.vim/plugged')
 
+
 Plug 'preservim/nerdtree'
 Plug 'mattn/emmet-vim'
+Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/tpope/vim-commentary.git'
 " gcc - line, gc - selection (commentary)
@@ -27,6 +29,11 @@ Plug 'https://github.com/tc50cal/vim-terminal.git'
 
 Plug 'https://github.com/Shougo/neoinclude.vim.git'
 Plug 'zchee/deoplete-jedi'
+
+" If you don't have nodejs and yarn
+" use pre build, add 'vim-plug' to the filetype list so vim-plug can update this plugin
+" see: https://github.com/iamcco/markdown-preview.nvim/issues/50
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " color schemas
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
@@ -46,7 +53,7 @@ let g:material_terminal_italics = 1
  " variants: default, palenight, ocean, lighter, darker, default-community,
  "           palenight-community, ocean-community, lighter-community,
  "           darker-community
-let g:material_theme_style = 'darker-community'
+let g:material_theme_style = 'ocean-community'
 colorscheme material
 if (has('termguicolors'))
   set termguicolors
@@ -57,6 +64,7 @@ endif
 " colorscheme ayu
 " colorscheme iceberg
 " colorscheme Atelier_PlateauLight
+
 
 nnoremap <F1> :%y *<CR> " all text in buffer 
 inoremap <C-v> <ESC>"+pa
@@ -85,3 +93,5 @@ inoremap {;<CR> {<CR>};<ESC>O
 " turn off search highlight
 nnoremap ,<space> :nohlsearch<CR>
 
+" Preview Markdown
+nmap <C-s> <Plug>MarkdownPreviewToggle
