@@ -70,10 +70,12 @@ nnoremap <F1> :%y *<CR> " all text in buffer
 inoremap <C-v> <ESC>"+pa
 vmap <F2> "+ygv " selection copy in buffer
 
+" Nerd tree
 nnoremap <leader>n :NERDTreeFocus<CR>
 noremap <C-z> :NERDTree<CR>
 nnoremap <C-x> :NERDTreeToggle<CR>
 
+" Terminal
 nnoremap <F3> :TerminalVSplit bash<CR>
 
 nnoremap <Left> :echoe "Use h"<CR>
@@ -81,6 +83,7 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" autocomplete
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
@@ -95,3 +98,9 @@ nnoremap ,<space> :nohlsearch<CR>
 
 " Preview Markdown
 nmap <C-s> <Plug>MarkdownPreviewToggle
+
+" Tabs
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
+nnoremap <F4> :tabnew<CR>
+nnoremap <F5> :tabclose<CR>
