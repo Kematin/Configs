@@ -72,8 +72,7 @@ vmap <F2> "+ygv " selection copy in buffer
 
 " Nerd tree
 nnoremap <leader>n :NERDTreeFocus<CR>
-noremap <C-z> :NERDTree<CR>
-nnoremap <C-x> :NERDTreeToggle<CR>
+nnoremap <C-z> :NERDTreeToggle<CR>
 
 " Terminal
 nnoremap <F3> :TerminalVSplit bash<CR>
