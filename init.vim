@@ -99,7 +99,7 @@ nnoremap ,<space> :nohlsearch<CR>
 nmap <C-s> <Plug>MarkdownPreviewToggle
 
 " Tabs
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
+nnoremap <C-j> :tabprevious<CR>
+nnoremap <C-k> :tabnext<CR>
 nnoremap <F4> :tabnew<CR>
 nnoremap <F5> :tabclose<CR>
