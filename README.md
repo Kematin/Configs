@@ -1,68 +1,37 @@
 # Neovim config by kematin
-## Fast download (Windows)
+#### My config functions
 
-<p>Download chocolatey</p>
+- Lsp server
+- Git Highlighting
+- Markdown Preview
 
-`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
-<b>In Powershell with administrator privileges</b>
-<p>Download neovim</p>
+### Download
 
-`choco install neovim` <b>In Powershell with administrator privileges</b> 
+***neovim***<br>
+`sudo apt install neovim`
 
-## Fast download (MacOS)
-<p>Download homebrew</p>
+***vimplug***<br>
+`sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+***npm***<br>
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`<br>
+`nvm install 14.4.0`
 
-<p>Download neovim</p>
+***lsp server (python)***<br>
+`npm install -g pyright`<br>
 
-`brew install neovim`
-<p><b>In terminal</b></p>
+Put init.vim to `~/.config/nvim/init.vim` folder.
 
-## Fast binds for neovim
+### How use lsp server
+`python3 -m venv venv`<br>
+`source venv/bin/activate`<br>
+`mdkir lsp_server & cd lsp_server & touch pyrightconfig.json`<br>
+`true > __init__.py`<br>
+> pyrightconfig.json
 ```
-esc = normal mode
-v = visual mode
-: = console mode
-i = insert mode
-```
-
-<b>Normal mode</b>
-```
-k = arrow up
-j = arrow down
-l = arrow right
-h = arrow left
-a = 1 symbol right and turn input mode
-A = go in end line and turn input mode
-o = create new under line and turn input mode
-O = create new upper line and turn input mode
-gg = enter in start line
-G = go in end line
-w = go in next word
-b = go in previous word
-u = Ctrl+Z
-right click = Ctrl+V
-[num][command] = command is executed num times (5l = go 5 symbol right)
-/[word] - find element (/555 - find 555)
-m[name] - create mark (mx - new mark with name x)
-`[name] - go in mark (`x - go in mark x)
-v + selection + x = delete selection
-dd = delete line
-cw = edit word
-yy = copy line
-y + selection = copy selection
-p = put line
-
-q[symbol] - create macrose with name symbole
-@[symbol] - use macrose
-```
-<b>Console mode</b>
-```
-:q! = close file without saving
-:q = close file
-:w = write file
-:wq = write and quit
-:so % set init.vim
-:PlugInstall
+{
+    "venv": "venv",
+    "venvPath": ".."
+}
 ```
