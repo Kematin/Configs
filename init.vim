@@ -122,3 +122,7 @@ let g:signify_sign_delete= '_'
 
 " for me
 set colorcolumn=85
+<<<<<<< HEAD
+=======
+
+>>>>>>> b6dc2f423da6c8a7f5a1661937d297e98112be13
