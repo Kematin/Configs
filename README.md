@@ -8,7 +8,11 @@
 ### Download
 
 ***neovim***<br>
-`sudo apt install neovim`
+`sudo apt install neovim` 0.4.3
+
+`sudo add-apt-repository ppa:neovim-ppa/unstable`<br>
+`sudo apt-get update`<br>
+`sudo apt-get install neovim` > 0.5 for lua<br>
 
 ***vimplug***<br>
 `sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

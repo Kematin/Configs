@@ -15,9 +15,14 @@ filetype indent on      " load filetype-specific indent files
 
 imap jk <Esc>  
 
+
+" ---- Plugins
 call plug#begin('~/.vim/plugged')
 
-" Lsp and autocomplete
+" Lsp
+Plug 'neovim/nvim-lspconfig'
+
+" autocomplete
 
 " Other plugins
 Plug 'mattn/emmet-vim'
@@ -71,6 +76,7 @@ let g:prettier#quickfix_enabled = 0
 " Turn on vim-sneak
 let g:sneak#label = 1
 
+" --- Binds
 " windows buffer
 nnoremap <F1> :%y *<CR> " all text in buffer 
 inoremap <C-v> <ESC>"+pa
@@ -122,7 +128,4 @@ let g:signify_sign_delete= '_'
 
 " for me
 set colorcolumn=85
-<<<<<<< HEAD
-=======
 
->>>>>>> b6dc2f423da6c8a7f5a1661937d297e98112be13
