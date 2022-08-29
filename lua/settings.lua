@@ -12,3 +12,4 @@ vim.bo.fileformat = unix
 -- vim.cmd [[set mouse=a]]
 -- set encoding=utf-8
 vim.opt.noswapfile = true
+vim.opt.mouse = 'a'
