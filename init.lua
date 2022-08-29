@@ -23,7 +23,11 @@ vim.cmd [[set colorcolumn=85]]
 -- signify git hightlight
 vim.cmd [[set updatetime=100]]
 vim.cmd [[let g:signify_sign_change= '~']]
--- vim.cmd [[let g:sneak#label = 1]]
+-- Turn on vim-sneak
+vim.cmd [[let g:sneak#label = 1]]
+-- Disable quickfix window for prettier
+vim.cmd [[let g:prettier#quickfix_enabled = 0]]
+
 
 -- local keymap = vim.api.nvim_set_keymap
 -- use { 

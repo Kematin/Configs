@@ -9,7 +9,6 @@ vim.bo.expandtab = true
 vim.bo.autoindent = true
 vim.bo.fileformat = unix
 
--- vim.cmd [[set mouse=a]]
--- set encoding=utf-8
-vim.opt.noswapfile = true
 vim.opt.mouse = 'a'
+vim.cmd [[set noswapfile]]
+vim.cmd [[set encoding=utf-8]]
