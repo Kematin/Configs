@@ -4,6 +4,8 @@
 - Lsp server
 - Git Highlighting
 - Markdown Preview
+- Autocomplete
+- NerdTree
 
 ### Download
 

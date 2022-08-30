@@ -20,8 +20,30 @@ require('packer').startup(function()
     use 'https://github.com/xolox/vim-misc.git'
     use 'https://github.com/xolox/vim-colorscheme-switcher.git'
 
-    -- " Git integration
+    -- Git integration
     use 'mhinz/vim-signify'
+
+    -- LSP configuration
+    use 'neovim/nvim-lspconfig'
+
+    -- Alpha vim (Dashboard)
+    use {
+    'goolord/alpha-nvim',
+    requires = { 'kyazdani42/nvim-web-devicons' },
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+    }
+
+    -- Vim sneak
+    use 'justinmk/vim-sneak'    
+
+    -- Autocomplete
+    use 'hrsh7th/nvim-compe'
+    
+    -- Treesitter
+    use 'nvim-treesitter/nvim-treesitter'    
+
 end)
 
 
