@@ -39,7 +39,11 @@ require('packer').startup(function()
     use 'justinmk/vim-sneak'    
 
     -- Autocomplete
-    use 'hrsh7th/nvim-compe'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'saadparwaiz1/cmp_luasnip'
+    use 'L3MON4D3/LuaSnip'
+    use 'nvim-lua/plenary.nvim'
     
     -- Treesitter
     use 'nvim-treesitter/nvim-treesitter'    
