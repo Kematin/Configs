@@ -7,11 +7,10 @@
 -- " colorscheme material
 -- " variants: mirage, dark, dark
 -- colorscheme ayu
--- " colorscheme iceberg
 -- " colorscheme Atelier_PlateauLight
 vim.cmd [[set termguicolors]]
-vim.cmd [[let ayucolor="dark"]]
-vim.cmd("colorscheme ayu")
+-- vim.cmd [[let ayucolor="dark"]]
+vim.cmd("colorscheme Atelier_PlateauLight")
 vim.cmd [[set colorcolumn=85]]
 
 ------- SIGNIFY GIT ------- 

@@ -45,9 +45,6 @@ require('packer').startup(function()
     use 'L3MON4D3/LuaSnip'
     use 'nvim-lua/plenary.nvim'
     
-    -- Treesitter
-    use 'nvim-treesitter/nvim-treesitter'    
-
 end)
 
 
