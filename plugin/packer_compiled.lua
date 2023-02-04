@@ -115,15 +115,20 @@ _G.packer_plugins = {
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/material.vim",
     url = "https://github.com/kaicataldo/material.vim"
   },
+  ["neo-tree.nvim"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
+    url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
+  },
   ["neoinclude.vim.git"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/neoinclude.vim.git",
     url = "https://github.com/Shougo/neoinclude.vim"
   },
-  nerdtree = {
+  ["nui.nvim"] = {
     loaded = true,
-    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/preservim/nerdtree"
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -138,7 +143,7 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -149,6 +154,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-airline"] = {
     loaded = true,

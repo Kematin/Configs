@@ -32,5 +32,3 @@ vim.cmd [[hi DiagnosticHint guifg=White]]
 ------- DEVICONS ------- 
 vim.cmd [[set guifont=DroidSansMono\ Nerd\ Font:h11]]
 
-------- MAP LEADER ------- 
-vim.cmd [[let mapleader = " "]]

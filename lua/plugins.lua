@@ -15,6 +15,11 @@ require('packer').startup(function()
           "MunifTanjim/nui.nvim",
         }
       }
+    use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    -- or                            , branch = '0.1.x',
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
     use 'mattn/emmet-vim'
     use 'vim-airline/vim-airline'
     use 'https://github.com/tpope/vim-commentary.git'
