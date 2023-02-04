@@ -6,6 +6,7 @@ require('packer').startup(function()
     -- Unless you are still migrating, remove the deprecated commands from v1.x
     vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
+    -- Neotree
     use {
       "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
@@ -15,11 +16,19 @@ require('packer').startup(function()
           "MunifTanjim/nui.nvim",
         }
       }
+    -- Telescope
     use {
       'nvim-telescope/telescope.nvim', tag = '0.1.1',
     -- or                            , branch = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
     }
+
+    -- Essential plugins
+    use 'tpope/vim-surround' 
+    -- ysw" word -> "word"
+    -- ysw<h1> word -> <h1>word</h1>
+    -- ds" "word" -> word
+    -- cs"' "word" -> 'word'
     use 'mattn/emmet-vim'
     use 'vim-airline/vim-airline'
     use 'https://github.com/tpope/vim-commentary.git'

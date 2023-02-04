@@ -194,6 +194,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/vim-sneak",
     url = "https://github.com/justinmk/vim-sneak"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 
