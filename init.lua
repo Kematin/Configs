@@ -1,8 +1,8 @@
 -- include lua
 require("plugins")
 require("binds")
-require("settings")
 require("opts")
+require("settings")
 
 -- include my modules
 require("my_modules/lua") -- navigation in config files (gf, c-o)
