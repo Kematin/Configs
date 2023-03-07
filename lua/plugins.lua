@@ -34,10 +34,9 @@ require('packer').startup(function()
     use 'https://github.com/tpope/vim-commentary.git'
     use 'https://github.com/Shougo/neoinclude.vim.git'
     use 'zchee/deoplete-jedi'
-    use ({
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end,
-    })
+
+    use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+    
 
     -- color schemas
     use 'kaicataldo/material.vim'

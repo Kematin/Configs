@@ -8,7 +8,7 @@ vim.cmd [[let mapleader = " "]]
 -- insert
 keymap('i', 'jk', '<Esc><CR>', {})
 -- visual
-keymap('v', '<F2>', ':ygv <CR>', { silent = true }) -- selection copy in windows buffer
+keymap('v', '<c-c>', '"+y', {}) -- selection copy in windows buffer
 -- normal
 keymap('n', '<c-s>', '<Plug>MarkdownPreviewToggle', {})
 
