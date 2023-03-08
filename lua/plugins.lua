@@ -48,6 +48,17 @@ require('packer').startup(function()
     -- Git integration
     use 'mhinz/vim-signify'
 
+    -- Autosave
+    use({
+        "Pocco81/auto-save.nvim",
+        config = function()
+             require("auto-save").setup {
+                -- your config goes here
+                -- or just leave it empty :)
+             }
+        end,
+    })
+
     -- Alpha vim (Dashboard)
     use {
         'goolord/alpha-nvim',
@@ -67,7 +78,7 @@ require('packer').startup(function()
     }
 
     -- Vim sneak
-    use 'justinmk/vim-sneak'    
+    use 'justinmk/vim-sneak'
 
     -- Autocomplete
     use 'hrsh7th/cmp-nvim-lsp'
@@ -87,8 +98,8 @@ require('packer').startup(function()
     -- Dap
     use "mfussenegger/nvim-dap"
     -- Formatter and Linter
+    use('MunifTanjim/prettier.nvim')
     use "jose-elias-alvarez/null-ls.nvim"
-   
 end)
 
 

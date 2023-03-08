@@ -25,8 +25,9 @@ keymap('n', '<F1>', ':%y *<CR>', opts)
 keymap('n', '<c-z>', ':Neotree toggle<CR>', opts)
 keymap('n', '<c-x>', ':Neotree focus<CR>', opts)
 keymap('n', '<F7>', ':SignifyToggleHightlight<CR>', opts)
-keymap('n', '<leader>ff', ':Telescope find_files<CR>', opts) 
-keymap('n', '<leader>fg', ':Telescope live_grep<CR>', opts) 
+keymap('n', '<leader>ff', ':Telescope find_files<CR>', opts)
+keymap('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
+keymap('n', '<leader>F', ':Prettier<CR>', opts)
 
 -- insert
 keymap('i', "'", "''<left>", opts)

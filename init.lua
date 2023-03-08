@@ -8,3 +8,5 @@ require("settings")
 require("my_modules/lua") -- navigation in config files (gf, c-o)
 require("my_modules/lsp-config")
 require("my_modules/autocomplete")
+require("my_modules/formaters")
+

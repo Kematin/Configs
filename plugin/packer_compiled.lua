@@ -85,6 +85,12 @@ _G.packer_plugins = {
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
+  ["auto-save.nvim"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0" },
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
+    url = "https://github.com/Pocco81/auto-save.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -197,6 +203,11 @@ _G.packer_plugins = {
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -249,6 +260,10 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
+-- Config for: auto-save.nvim
+time([[Config for auto-save.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0", "config", "auto-save.nvim")
+time([[Config for auto-save.nvim]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\nÙ\3\0\0\b\0\25\00136\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\1\5\0009\1\6\0014\2\a\0009\3\b\0'\5\t\0'\6\n\0'\a\v\0B\3\4\2>\3\1\0029\3\b\0'\5\f\0'\6\r\0'\a\14\0B\3\4\2>\3\2\0029\3\b\0'\5\15\0'\6\16\0'\a\17\0B\3\4\2>\3\3\0029\3\b\0'\5\18\0'\6\19\0B\3\3\2>\3\4\0029\3\b\0'\5\20\0'\6\21\0B\3\3\2>\3\5\0029\3\b\0'\5\22\0'\6\23\0'\a\24\0B\3\4\0?\3\0\0=\2\a\1K\0\1\0\v:q<CR>\14âœ—  Quit\6q\19ïœ«  Find word\fSPC f g\19ï¡ˆ  Find file\fSPC f f#:e ~/.config/nvim/init.lua<CR>\21ï‘¡  Nvim config\6v\15:Mason<CR>\25ïœ¡  Mason Installer\6m\18<cmd>ene <CR>\18ï…›  New file\6e\vbutton\bval\fbuttons\fsection\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\r€€À™\4\0", "config", "alpha-nvim")
