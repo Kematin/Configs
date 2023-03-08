@@ -36,11 +36,52 @@ local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-require('lspconfig')['pyright'].setup{
+
+
+-- MASON
+
+
+require("mason").setup({
+    ui = {
+        icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗"
+        }
+    }
+})
+
+require("mason-lspconfig").setup({
+    ensure_installed = { 
+        "lua_ls",
+        "pyright",
+        "tsserver",
+        "eslint",
+        "html",
+    }
+})
+
+
+-- LSP SERVERS
+
+
+require("lspconfig").lua_ls.setup {
     on_attach = on_attach,
     flags = lsp_flags,
 }
-require('lspconfig')['tsserver'].setup{
+require('lspconfig').pyright.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require('lspconfig').tsserver.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require('lspconfig').eslint.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require('lspconfig').html.setup{
     on_attach = on_attach,
     flags = lsp_flags,
 }
