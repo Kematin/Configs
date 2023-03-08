@@ -35,6 +35,7 @@ require('packer').startup(function()
     use 'https://github.com/Shougo/neoinclude.vim.git'
     use 'zchee/deoplete-jedi'
 
+    -- Markdown preview
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
     
 
@@ -47,16 +48,22 @@ require('packer').startup(function()
     -- Git integration
     use 'mhinz/vim-signify'
 
-    -- LSP configuration
-    use 'neovim/nvim-lspconfig'
-
     -- Alpha vim (Dashboard)
     use {
-    'goolord/alpha-nvim',
-    requires = { 'kyazdani42/nvim-web-devicons' },
-    config = function ()
-        require'alpha'.setup(require'alpha.themes.dashboard'.config)
-    end
+        'goolord/alpha-nvim',
+        requires = { 'kyazdani42/nvim-web-devicons' },
+        config = function ()
+            require'alpha'.setup(require'alpha.themes.dashboard'.config)
+            local start = require("alpha.themes.dashboard")
+            start.section.buttons.val = {
+                start.button("e", "  New file", "<cmd>ene <CR>"),
+                start.button("m", "  Mason Installer", ":Mason<CR>"),
+                start.button("v", "  Nvim config", ":e ~/.config/nvim/init.lua<CR>"),
+                start.button("SPC f f", "  Find file"),
+                start.button("SPC f g", "  Find word"),
+                start.button("q", "✗  Quit", ":q<CR>"),
+            }
+        end
     }
 
     -- Vim sneak
@@ -72,7 +79,16 @@ require('packer').startup(function()
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
     use "rafamadriz/friendly-snippets"
-    
+
+     -- LSP configuration (with mason)
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
+    use "neovim/nvim-lspconfig"
+    -- Dap
+    use "mfussenegger/nvim-dap"
+    -- Formatter and Linter
+    use "jose-elias-alvarez/null-ls.nvim"
+   
 end)
 
 
