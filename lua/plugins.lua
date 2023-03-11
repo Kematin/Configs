@@ -65,14 +65,15 @@ require('packer').startup(function()
         requires = { 'kyazdani42/nvim-web-devicons' },
         config = function ()
             require'alpha'.setup(require'alpha.themes.dashboard'.config)
-            local start = require("alpha.themes.dashboard")
-            start.section.buttons.val = {
-                start.button("e", "  New file", "<cmd>ene <CR>"),
-                start.button("m", "  Mason Installer", ":Mason<CR>"),
-                start.button("v", "  Nvim config", ":e ~/.config/nvim/init.lua<CR>"),
-                start.button("SPC f f", "  Find file"),
-                start.button("SPC f g", "  Find word"),
-                start.button("q", "✗  Quit", ":q<CR>"),
+            local startify = require("alpha.themes.dashboard")
+            startify.section.buttons.val = {
+                startify.button("e", "  New file", "<cmd>ene <CR>"),
+                startify.button("n", "  NeoTree", ":Neotree float .<CR>"),
+                startify.button("m", "  Mason Installer", ":Mason<CR>"),
+                startify.button("v", "  Nvim config", ":Neotree float ~/.config/nvim<CR>"),
+                startify.button("f", "  Find file", ":Telescope find_files<CR>"),
+                startify.button("g", "  Find word", ":Telescope live_grep<CR>"),
+                startify.button("q", "✗  Quit", ":q<CR>"),
             }
         end
     }

@@ -29,14 +29,33 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-  vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
 local lsp_flags = {
   -- This is the default in Nvim 0.7+
   debounce_text_changes = 150,
 }
-
+require('lspconfig')['pyright'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require('lspconfig')['tsserver'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require('lspconfig').eslint.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require('lspconfig').html.setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+require("lspconfig").lua_ls.setup {
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
 
 -- MASON
 
@@ -52,37 +71,9 @@ require("mason").setup({
 })
 
 require("mason-lspconfig").setup({
-    ensure_installed = { 
+    ensure_installed = {
         "lua_ls",
-        "pyright",
-        "tsserver",
-        "eslint",
-        "html",
     }
 })
 
-
--- LSP SERVERS
-
-
-require("lspconfig").lua_ls.setup {
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig').pyright.setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig').tsserver.setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig').eslint.setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
-require('lspconfig').html.setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
-}
 
