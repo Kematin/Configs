@@ -36,9 +36,9 @@ require('packer').startup(function()
     use 'zchee/deoplete-jedi'
 
     -- Tabs
-    use 'nvim-tree/nvim-web-devicons'
-    use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
-    use 'https://github.com/moll/vim-bbye'
+    -- use { 'echasnovski/mini.tabline', branch = 'stable' }
+    use 'nanozuki/tabby.nvim'
+
 
 
     -- Markdown preview
