@@ -91,6 +91,11 @@ _G.packer_plugins = {
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
     url = "https://github.com/Pocco81/auto-save.nvim"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -217,6 +222,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/vim-airline",
     url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-bbye"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
   },
   ["vim-colorscheme-switcher.git"] = {
     loaded = true,

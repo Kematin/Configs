@@ -1,16 +1,8 @@
 ------- COLORSCHEME ------- 
--- let g:material_terminal_italics = 1
---  " variants: default, palenight, ocean, lighter, darker, default-community,
---  "           palenight-community, ocean-community, lighter-community,
---  "           darker-community
--- " let g:material_theme_style = 'darker'
--- " colorscheme material
--- " variants: mirage, dark, dark
--- colorscheme ayu
--- " colorscheme Atelier_PlateauLight
--- vim.cmd [[set termguicolors]]
--- vim.cmd [[let ayucolor="dark"]]
+vim.cmd("set termguicolors")
 vim.cmd("colorscheme Atelier_PlateauLight")
+vim.cmd("let g:airline#extensions#tabline#fnamemod = ':t'")
+vim.cmd("let g:airline_section_c = '%t'")
 -- vim.cmd [[set colorcolumn=85]]
 
 ------- SIGNIFY GIT ------- 
@@ -30,4 +22,4 @@ vim.cmd [[hi DiagnosticHint guifg=White]]
 
 ------- DEVICONS ------- 
 vim.cmd [[set guifont=DroidSansMono\ Nerd\ Font:h11]]
-
+vim.cmd [[let g:airline#extensions#tabline#fnamemod = ':t']]

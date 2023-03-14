@@ -10,7 +10,7 @@ require('packer').startup(function()
     use {
       "nvim-neo-tree/neo-tree.nvim",
         branch = "v2.x",
-        requires = { 
+        requires = {
           "nvim-lua/plenary.nvim",
           "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
           "MunifTanjim/nui.nvim",
@@ -34,6 +34,12 @@ require('packer').startup(function()
     use 'https://github.com/tpope/vim-commentary.git'
     use 'https://github.com/Shougo/neoinclude.vim.git'
     use 'zchee/deoplete-jedi'
+
+    -- Tabs
+    use 'nvim-tree/nvim-web-devicons'
+    use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+    use 'https://github.com/moll/vim-bbye'
+
 
     -- Markdown preview
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
