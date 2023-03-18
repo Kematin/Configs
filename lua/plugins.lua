@@ -4,6 +4,16 @@ require('packer').startup(function()
 
     -- Colorizer
     use 'norcalli/nvim-colorizer.lua'
+    use 'nvim-lua/plenary.nvim'
+
+    -- Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function()
+            local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+            ts_update()
+        end,
+    } 
 
     -- " Other plugins
     -- Unless you are still migrating, remove the deprecated commands from v1.x
@@ -27,7 +37,7 @@ require('packer').startup(function()
     }
 
     -- Essential plugins
-    use 'tpope/vim-surround' 
+    use 'tpope/vim-surround'
     -- ysw" word -> "word"
     -- ysw<h1> word -> <h1>word</h1>
     -- ds" "word" -> word
@@ -35,24 +45,24 @@ require('packer').startup(function()
     use 'mattn/emmet-vim'
     use 'vim-airline/vim-airline'
     use 'https://github.com/tpope/vim-commentary.git'
-    use 'https://github.com/Shougo/neoinclude.vim.git'
-    use 'zchee/deoplete-jedi'
+    -- use 'https://github.com/Shougo/neoinclude.vim.git'
+    -- use 'zchee/deoplete-jedi'
 
     -- Tabs
     -- use { 'echasnovski/mini.tabline', branch = 'stable' }
     use 'nanozuki/tabby.nvim'
 
-
-
     -- Markdown preview
     use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-    
 
     -- color schemas
     use 'kaicataldo/material.vim'
     use 'flazz/vim-colorschemes'
     use 'https://github.com/xolox/vim-misc.git'
     use 'https://github.com/xolox/vim-colorscheme-switcher.git'
+    -- From lunar vim
+    use 'folke/tokyonight.nvim'
+    use 'https://github.com/lunarvim/lunar.nvim'
 
     -- Git integration
     use 'mhinz/vim-signify'
@@ -86,9 +96,6 @@ require('packer').startup(function()
             }
         end
     }
-
-    -- Vim sneak
-    use 'justinmk/vim-sneak'
 
     -- Autocomplete
     use 'hrsh7th/cmp-nvim-lsp'

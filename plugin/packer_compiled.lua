@@ -116,11 +116,6 @@ _G.packer_plugins = {
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["deoplete-jedi"] = {
-    loaded = true,
-    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/deoplete-jedi",
-    url = "https://github.com/zchee/deoplete-jedi"
-  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/emmet-vim",
@@ -130,6 +125,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["lunar.nvim"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/lunar.nvim",
+    url = "https://github.com/lunarvim/lunar.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = false,
@@ -157,11 +157,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["neoinclude.vim.git"] = {
-    loaded = true,
-    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/neoinclude.vim.git",
-    url = "https://github.com/Shougo/neoinclude.vim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -193,6 +188,11 @@ _G.packer_plugins = {
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -222,6 +222,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-airline"] = {
     loaded = true,
@@ -253,11 +258,6 @@ _G.packer_plugins = {
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/vim-signify",
     url = "https://github.com/mhinz/vim-signify"
   },
-  ["vim-sneak"] = {
-    loaded = true,
-    path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/vim-sneak",
-    url = "https://github.com/justinmk/vim-sneak"
-  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/kematin/.local/share/nvim/site/pack/packer/start/vim-surround",
@@ -270,14 +270,14 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
--- Config for: auto-save.nvim
-time([[Config for auto-save.nvim]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0", "config", "auto-save.nvim")
-time([[Config for auto-save.nvim]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\nÇ\4\0\0\b\0\30\1;6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\0016\0\0\0'\2\3\0B\0\2\0029\1\5\0009\1\6\0014\2\b\0009\3\b\0'\5\t\0'\6\n\0'\a\v\0B\3\4\2>\3\1\0029\3\b\0'\5\f\0'\6\r\0'\a\14\0B\3\4\2>\3\2\0029\3\b\0'\5\15\0'\6\16\0'\a\17\0B\3\4\2>\3\3\0029\3\b\0'\5\18\0'\6\19\0'\a\20\0B\3\4\2>\3\4\0029\3\b\0'\5\21\0'\6\22\0'\a\23\0B\3\4\2>\3\5\0029\3\b\0'\5\24\0'\6\25\0'\a\26\0B\3\4\2>\3\6\0029\3\b\0'\5\27\0'\6\28\0'\a\29\0B\3\4\0?\3\0\0=\2\a\1K\0\1\0\v:q<CR>\14âœ—  Quit\6q\29:Telescope live_grep<CR>\19ïœ«  Find word\6g\30:Telescope find_files<CR>\19ï¡ˆ  Find file\6f&:Neotree float ~/.config/nvim<CR>\21ï‘¡  Nvim config\6v\15:Mason<CR>\25ïœ¡  Mason Installer\6m\25:Neotree float .<CR>\17ï‘¤  NeoTree\6n\18<cmd>ene <CR>\18ï…›  New file\6e\vbutton\bval\fbuttons\fsection\vconfig\27alpha.themes.dashboard\nsetup\nalpha\frequire\15€€À™\4\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
+-- Config for: auto-save.nvim
+time([[Config for auto-save.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0", "config", "auto-save.nvim")
+time([[Config for auto-save.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads

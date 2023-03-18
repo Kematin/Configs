@@ -1,9 +1,8 @@
 ------- COLORSCHEME ------- 
 vim.cmd("set termguicolors")
-vim.cmd("colorscheme Atelier_PlateauLight")
-vim.cmd("let g:airline#extensions#tabline#fnamemod = ':t'")
-vim.cmd("let g:airline_section_c = '%t'")
--- vim.cmd [[set colorcolumn=85]]
+-- vim.cmd("colorscheme Atelier_PlateauLight")
+vim.cmd("colorscheme base16-ateliercave")
+vim.cmd [[set colorcolumn=85]]
 
 ------- SIGNIFY GIT ------- 
 vim.cmd [[set updatetime=100]]

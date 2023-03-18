@@ -14,4 +14,3 @@ vim.cmd [[set encoding=utf-8]]
 -- Treesitter
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-   
