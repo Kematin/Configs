@@ -1,7 +1,7 @@
 ------- COLORSCHEME ------- 
 vim.cmd("set termguicolors")
 -- vim.cmd("colorscheme Atelier_PlateauLight")
-vim.cmd("colorscheme base16-ateliercave")
+vim.cmd("colorscheme tokyonight-night")
 vim.cmd [[set colorcolumn=85]]
 
 ------- SIGNIFY GIT ------- 
