@@ -1,0 +1,1585 @@
+{
+    "userDataProfilesMigration": true,
+    "profileAssociations": {
+        "workspaces": {},
+        "emptyWindows": {
+            "1681556038042": "__default__profile__"
+        }
+    },
+    "profileAssociationsMigration": true,
+    "telemetry.machineId": "599db84cc7a61b8b9efe4bf2e85a6ee6a9fef750c4a8ae67c17a6a7f28e730c7",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1681556038042"
+            }
+        ]
+    },
+    "windowControlHeight": 34,
+    "lastKnownMenubarData": {
+        "menus": {
+            "File": {
+                "items": [
+                    {
+                        "id": "workbench.action.files.newUntitledFile",
+                        "label": "&&Создать текстовый файл"
+                    },
+                    {
+                        "id": "welcome.showNewFileEntries",
+                        "label": "Создать файл…"
+                    },
+                    {
+                        "id": "workbench.action.newWindow",
+                        "label": "&&Новое окно"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.files.openFileFolder",
+                        "label": "&&Открыть..."
+                    },
+                    {
+                        "id": "workbench.action.files.openFolder",
+                        "label": "Открыть &&папку..."
+                    },
+                    {
+                        "id": "workbench.action.openWorkspace",
+                        "label": "Открыть раб&&очую область из файла..."
+                    },
+                    {
+                        "id": "submenuitem.MenubarRecentMenu",
+                        "label": "Открыть &&последние",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.reopenClosedEditor",
+                                    "label": "&&Повторно открыть закрытый редактор",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.openRecent",
+                                    "label": "&&Дополнительно..."
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.clearRecentFiles",
+                                    "label": "&&Очистить недавно открытые"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "addRootFolder",
+                        "label": "Д&&обавить папку в рабочую область..."
+                    },
+                    {
+                        "id": "workbench.action.saveWorkspaceAs",
+                        "label": "Сохранить рабочую область как..."
+                    },
+                    {
+                        "id": "workbench.action.duplicateWorkspaceInNewWindow",
+                        "label": "Дублировать рабочую область"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.files.save",
+                        "label": "&&Сохранить"
+                    },
+                    {
+                        "id": "workbench.action.files.saveAs",
+                        "label": "Сохранить &&как..."
+                    },
+                    {
+                        "id": "saveAll",
+                        "label": "Сохранить &&все",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "submenuitem.MenubarShare",
+                        "label": "Поделиться",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.profiles.actions.exportProfile",
+                                    "label": "Экспортировать профиль (По умолчанию)…"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.importProfile",
+                                    "label": "Импортировать профиль…"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.toggleAutoSave",
+                        "label": "А&&втосохранение",
+                        "checked": true
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.files.revert",
+                        "label": "Отменить &&изменения в файле"
+                    },
+                    {
+                        "id": "workbench.action.closeActiveEditor",
+                        "label": "&&Закрыть редактор"
+                    },
+                    {
+                        "id": "workbench.action.closeWindow",
+                        "label": "Закрыть &&окно"
+                    }
+                ]
+            },
+            "Edit": {
+                "items": [
+                    {
+                        "id": "undo",
+                        "label": "&&Отменить"
+                    },
+                    {
+                        "id": "redo",
+                        "label": "&&Повторить"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.clipboardCutAction",
+                        "label": "&&Вырезать"
+                    },
+                    {
+                        "id": "editor.action.clipboardCopyAction",
+                        "label": "&&Копировать"
+                    },
+                    {
+                        "id": "editor.action.clipboardPasteAction",
+                        "label": "&&Вставить"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "actions.find",
+                        "label": "&&Найти"
+                    },
+                    {
+                        "id": "editor.action.startFindReplaceAction",
+                        "label": "&&Заменить"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.findInFiles",
+                        "label": "Найти &&в файлах"
+                    },
+                    {
+                        "id": "workbench.action.replaceInFiles",
+                        "label": "Заменить в файлах"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.commentLine",
+                        "label": "Переключить комментарий &&строки"
+                    },
+                    {
+                        "id": "editor.action.blockComment",
+                        "label": "Переключить комментарий &&блока"
+                    },
+                    {
+                        "id": "editor.emmet.action.expandAbbreviation",
+                        "label": "Emmet: р&&азвернуть сокращение"
+                    }
+                ]
+            },
+            "Selection": {
+                "items": [
+                    {
+                        "id": "editor.action.selectAll",
+                        "label": "&&Выделить все"
+                    },
+                    {
+                        "id": "editor.action.smartSelect.expand",
+                        "label": "&&Развернуть выделение"
+                    },
+                    {
+                        "id": "editor.action.smartSelect.shrink",
+                        "label": "&&Сжать выделение"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.copyLinesUpAction",
+                        "label": "&&Копировать на строку выше"
+                    },
+                    {
+                        "id": "editor.action.copyLinesDownAction",
+                        "label": "Копировать на строку &&ниже"
+                    },
+                    {
+                        "id": "editor.action.moveLinesUpAction",
+                        "label": "Переместить на с&&троку выше"
+                    },
+                    {
+                        "id": "editor.action.moveLinesDownAction",
+                        "label": "&&Переместить на строку ниже"
+                    },
+                    {
+                        "id": "editor.action.duplicateSelection",
+                        "label": "&&Дублировать выбранное"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.insertCursorAbove",
+                        "label": "Добавить курсор &&выше"
+                    },
+                    {
+                        "id": "editor.action.insertCursorBelow",
+                        "label": "Добавить курсор &&ниже"
+                    },
+                    {
+                        "id": "editor.action.insertCursorAtEndOfEachLineSelected",
+                        "label": "Добавить курсоры в &&окончания строк"
+                    },
+                    {
+                        "id": "editor.action.addSelectionToNextFindMatch",
+                        "label": "Добавить &&следующее вхождение"
+                    },
+                    {
+                        "id": "editor.action.addSelectionToPreviousFindMatch",
+                        "label": "Добавить &&предыдущее вхождение"
+                    },
+                    {
+                        "id": "editor.action.selectHighlights",
+                        "label": "Выбрать все &&вхождения"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.toggleMultiCursorModifier",
+                        "label": "Для работы в режиме нескольких курсоров нажмите левую кнопку мыши, удерживая клавишу COMMAND "
+                    },
+                    {
+                        "id": "editor.action.toggleColumnSelection",
+                        "label": "Режим &&выбора столбцов"
+                    }
+                ]
+            },
+            "View": {
+                "items": [
+                    {
+                        "id": "workbench.action.showCommands",
+                        "label": "&&Палитра команд..."
+                    },
+                    {
+                        "id": "workbench.action.openView",
+                        "label": "&&Открыть представление..."
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "submenuitem.MenubarAppearanceMenu",
+                        "label": "&&Внешний вид",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.toggleFullScreen",
+                                    "label": "&&Полный экран"
+                                },
+                                {
+                                    "id": "workbench.action.toggleZenMode",
+                                    "label": "Режим Zen"
+                                },
+                                {
+                                    "id": "workbench.action.toggleCenteredLayout",
+                                    "label": "&&Выровненный по центру макет"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.toggleSidebarVisibility",
+                                    "label": "&&Основная боковая панель",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.toggleAuxiliaryBar",
+                                    "label": "Дополнительная боко&&вая панель"
+                                },
+                                {
+                                    "id": "workbench.action.toggleStatusbarVisibility",
+                                    "label": "С&&трока состояния",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.toggleActivityBarVisibility",
+                                    "label": "&&Панель действий",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "workbench.action.togglePanel",
+                                    "label": "&&Панель"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.toggleSidebarPosition",
+                                    "label": "&&Переместить основную боковую панель вправо"
+                                },
+                                {
+                                    "id": "submenuitem.PanelPositionMenu",
+                                    "label": "Положение панели",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.positionPanelBottom",
+                                                "label": "Внизу",
+                                                "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.positionPanelLeft",
+                                                "label": "Слева"
+                                            },
+                                            {
+                                                "id": "workbench.action.positionPanelRight",
+                                                "label": "Справа"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "submenuitem.PanelAlignmentMenu",
+                                    "label": "Выровнять панель",
+                                    "submenu": {
+                                        "items": [
+                                            {
+                                                "id": "workbench.action.alignPanelJustify",
+                                                "label": "Выровнять"
+                                            },
+                                            {
+                                                "id": "workbench.action.alignPanelCenter",
+                                                "label": "По центру",
+                                                "checked": true
+                                            },
+                                            {
+                                                "id": "workbench.action.alignPanelLeft",
+                                                "label": "Слева"
+                                            },
+                                            {
+                                                "id": "workbench.action.alignPanelRight",
+                                                "label": "Справа"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "editor.action.toggleMinimap",
+                                    "label": "&&Мини-карта"
+                                },
+                                {
+                                    "id": "breadcrumbs.toggle",
+                                    "label": "&&Элементы навигации"
+                                },
+                                {
+                                    "id": "editor.action.toggleRenderWhitespace",
+                                    "label": "&&Отображать пробелы",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "editor.action.toggleRenderControlCharacter",
+                                    "label": "Отобразить &&управляющие символы",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.zoomIn",
+                                    "label": "&&Увеличить"
+                                },
+                                {
+                                    "id": "workbench.action.zoomOut",
+                                    "label": "&&Уменьшить"
+                                },
+                                {
+                                    "id": "workbench.action.zoomReset",
+                                    "label": "&&Сбросить масштаб"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "submenuitem.MenubarLayoutMenu",
+                        "label": "Макет &&редактора",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.splitEditorUp",
+                                    "label": "Разделить &&вверх"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorDown",
+                                    "label": "Разделить &&вниз"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorLeft",
+                                    "label": "Разделить &&слева"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorRight",
+                                    "label": "Разделить &&вправо"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutSingle",
+                                    "label": "&&Отдельный"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoColumns",
+                                    "label": "&&Два столбца"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutThreeColumns",
+                                    "label": "Т&&ри столбца"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoRows",
+                                    "label": "Д&&ве строки"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutThreeRows",
+                                    "label": "Три &&строки"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoByTwoGrid",
+                                    "label": "&&Сетка (2x2)"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoRowsRight",
+                                    "label": "Две с&&троки вправо"
+                                },
+                                {
+                                    "id": "workbench.action.editorLayoutTwoColumnsBottom",
+                                    "label": "Два &&столбца внизу"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.toggleEditorGroupLayout",
+                                    "label": "Отразить &&макет"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.view.explorer",
+                        "label": "Про&&водник"
+                    },
+                    {
+                        "id": "workbench.view.search",
+                        "label": "&&Поиск"
+                    },
+                    {
+                        "id": "workbench.view.scm",
+                        "label": "Система &&управления версиями"
+                    },
+                    {
+                        "id": "workbench.view.debug",
+                        "label": "&&Выполнить"
+                    },
+                    {
+                        "id": "workbench.view.extensions",
+                        "label": "Р&&асширения"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.actions.view.problems",
+                        "label": "&&Проблемы"
+                    },
+                    {
+                        "id": "workbench.action.output.toggleOutput",
+                        "label": "&&Выходные данные"
+                    },
+                    {
+                        "id": "workbench.debug.action.toggleRepl",
+                        "label": "Ко&&нсоль отладки"
+                    },
+                    {
+                        "id": "workbench.action.terminal.toggleTerminal",
+                        "label": "&&Терминал"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.toggleWordWrap",
+                        "label": "&&Перенос по словам",
+                        "enabled": false
+                    },
+                    {
+                        "id": "editor.action.toggleStickyScroll",
+                        "label": "&&&Залипание прокрутки"
+                    }
+                ]
+            },
+            "Go": {
+                "items": [
+                    {
+                        "id": "workbench.action.navigateBack",
+                        "label": "&&Назад",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.navigateForward",
+                        "label": "&&Вперед",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.navigateToLastEditLocation",
+                        "label": "&&Место последнего изменения",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "submenuitem.MenubarSwitchEditorMenu",
+                        "label": "Переключить р&&едактор",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.nextEditor",
+                                    "label": "&&Следующий редактор"
+                                },
+                                {
+                                    "id": "workbench.action.previousEditor",
+                                    "label": "&&Предыдущий редактор"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.openNextRecentlyUsedEditor",
+                                    "label": "&&Следующий используемый редактор"
+                                },
+                                {
+                                    "id": "workbench.action.openPreviousRecentlyUsedEditor",
+                                    "label": "&&Предыдущий использованный редактор"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.nextEditorInGroup",
+                                    "label": "&&Следующий редактор в группе"
+                                },
+                                {
+                                    "id": "workbench.action.previousEditorInGroup",
+                                    "label": "&&Предыдущий редактор в группе"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.openNextRecentlyUsedEditorInGroup",
+                                    "label": "&&Следующий используемый редактор в группе"
+                                },
+                                {
+                                    "id": "workbench.action.openPreviousRecentlyUsedEditorInGroup",
+                                    "label": "&&Предыдущий используемый редактор в группе"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "submenuitem.MenubarSwitchGroupMenu",
+                        "label": "Переключить &&группу",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.focusFirstEditorGroup",
+                                    "label": "Группа &&1"
+                                },
+                                {
+                                    "id": "workbench.action.focusSecondEditorGroup",
+                                    "label": "Группа &&2"
+                                },
+                                {
+                                    "id": "workbench.action.focusThirdEditorGroup",
+                                    "label": "Группа &&3",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusFourthEditorGroup",
+                                    "label": "Группа &&4",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusFifthEditorGroup",
+                                    "label": "Группа &&5",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.focusNextGroup",
+                                    "label": "&&Следующая группа",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusPreviousGroup",
+                                    "label": "&&Предыдущая группа",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.focusLeftGroup",
+                                    "label": "Группировать &&слева",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusRightGroup",
+                                    "label": "Группировать &&справа",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusAboveGroup",
+                                    "label": "Группа &&выше",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "workbench.action.focusBelowGroup",
+                                    "label": "Группа &&ниже",
+                                    "enabled": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.quickOpen",
+                        "label": "Перейти к &&файлу..."
+                    },
+                    {
+                        "id": "workbench.action.showAllSymbols",
+                        "label": "Перейти к символу в &&рабочей области..."
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.gotoSymbol",
+                        "label": "Перейти к &&символу в редакторе..."
+                    },
+                    {
+                        "id": "editor.action.revealDefinition",
+                        "label": "Перейти к &&определению"
+                    },
+                    {
+                        "id": "editor.action.revealDeclaration",
+                        "label": "Перейти к &&объявлению"
+                    },
+                    {
+                        "id": "editor.action.goToTypeDefinition",
+                        "label": "Перейти к &&определению типа"
+                    },
+                    {
+                        "id": "editor.action.goToImplementation",
+                        "label": "Перейти к &&реализациям"
+                    },
+                    {
+                        "id": "editor.action.goToReferences",
+                        "label": "Перейти к &&ссылкам"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.gotoLine",
+                        "label": "Перейти к &&строке/столбцу..."
+                    },
+                    {
+                        "id": "editor.action.jumpToBracket",
+                        "label": "Перейти к &&скобке"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.marker.nextInFiles",
+                        "label": "Следующая &&проблема"
+                    },
+                    {
+                        "id": "editor.action.marker.prevInFiles",
+                        "label": "Предыдущая &&проблема"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.action.dirtydiff.next",
+                        "label": "Следующее &&изменение"
+                    },
+                    {
+                        "id": "editor.action.dirtydiff.previous",
+                        "label": "Предыдущее &&изменение"
+                    }
+                ]
+            },
+            "Run": {
+                "items": [
+                    {
+                        "id": "workbench.action.debug.start",
+                        "label": "&&Запустить отладку"
+                    },
+                    {
+                        "id": "workbench.action.debug.run",
+                        "label": "Запуск &&без отладки"
+                    },
+                    {
+                        "id": "workbench.action.debug.stop",
+                        "label": "&&Остановить отладку",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.restart",
+                        "label": "&&Перезапустить отладку",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.debug.configure",
+                        "label": "От&&крыть конфигурации",
+                        "enabled": false
+                    },
+                    {
+                        "id": "debug.addConfiguration",
+                        "label": "Д&&обавить конфигурацию..."
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.debug.stepOver",
+                        "label": "Шаг с о&&бходом",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.stepInto",
+                        "label": "Ш&&аг с заходом",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.stepOut",
+                        "label": "Шаг с &&выходом",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.debug.continue",
+                        "label": "&&Продолжить",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "editor.debug.action.toggleBreakpoint",
+                        "label": "Перек&&лючить точку останова"
+                    },
+                    {
+                        "id": "submenuitem.MenubarNewBreakpointMenu",
+                        "label": "&&Новая точка останова",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "editor.debug.action.editBreakpoint",
+                                    "label": "&&Изменить точку останова…"
+                                },
+                                {
+                                    "id": "editor.debug.action.conditionalBreakpoint",
+                                    "label": "У&&словная точка останова…"
+                                },
+                                {
+                                    "id": "editor.debug.action.toggleInlineBreakpoint",
+                                    "label": "Встроенная точка оста&&нова"
+                                },
+                                {
+                                    "id": "workbench.debug.viewlet.action.addFunctionBreakpointAction",
+                                    "label": "&&Точка останова в функции…"
+                                },
+                                {
+                                    "id": "editor.debug.action.addLogPoint",
+                                    "label": "&&Точка ведения журнала…"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.enableAllBreakpoints",
+                        "label": "&&Включить все точки останова"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.disableAllBreakpoints",
+                        "label": "Отключить &&все точки останова"
+                    },
+                    {
+                        "id": "workbench.debug.viewlet.action.removeAllBreakpoints",
+                        "label": "Удалить &&все точки останова"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "debug.installAdditionalDebuggers",
+                        "label": "У&&становить дополнительные отладчики..."
+                    }
+                ]
+            },
+            "Terminal": {
+                "items": [
+                    {
+                        "id": "workbench.action.terminal.new",
+                        "label": "&&Создать терминал"
+                    },
+                    {
+                        "id": "workbench.action.terminal.split",
+                        "label": "&&Разделить терминал"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.runTask",
+                        "label": "&&Запуск задачи..."
+                    },
+                    {
+                        "id": "workbench.action.tasks.build",
+                        "label": "Запустить зада&&чу сборки..."
+                    },
+                    {
+                        "id": "workbench.action.terminal.runActiveFile",
+                        "label": "Запустить &&активный файл"
+                    },
+                    {
+                        "id": "workbench.action.terminal.runSelectedText",
+                        "label": "Запустить &&выбранный текст"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.showTasks",
+                        "label": "Показать выполняющи&&еся задачи...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.tasks.restartTask",
+                        "label": "П&&ерезапустить выполняющуюся задачу...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "workbench.action.tasks.terminate",
+                        "label": "&&Завершить задачу...",
+                        "enabled": false
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.tasks.configureTaskRunner",
+                        "label": "&&Настройка задач..."
+                    },
+                    {
+                        "id": "workbench.action.tasks.configureDefaultBuildTask",
+                        "label": "Настроить задачу с&&борки по умолчанию..."
+                    }
+                ]
+            },
+            "Help": {
+                "items": [
+                    {
+                        "id": "workbench.action.openWalkthrough",
+                        "label": "Приветствие"
+                    },
+                    {
+                        "id": "workbench.action.showCommands",
+                        "label": "Показать все команды"
+                    },
+                    {
+                        "id": "workbench.action.showInteractivePlayground",
+                        "label": "Интер&&активная среда редактора"
+                    },
+                    {
+                        "id": "workbench.action.openDocumentationUrl",
+                        "label": "&&Документация"
+                    },
+                    {
+                        "id": "update.showCurrentReleaseNotes",
+                        "label": "Показать &&заметки о выпуске"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.keybindingsReference",
+                        "label": "С&&правочник по сочетаниям клавиш"
+                    },
+                    {
+                        "id": "workbench.action.openVideoTutorialsUrl",
+                        "label": "&&Видеоруководства"
+                    },
+                    {
+                        "id": "workbench.action.openTipsAndTricksUrl",
+                        "label": "Советы и реко&&мендации"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.openTwitterUrl",
+                        "label": "&&Присоединяйтесь к нам в Twitter"
+                    },
+                    {
+                        "id": "workbench.action.openRequestFeatureUrl",
+                        "label": "&&Поиск запросов функций"
+                    },
+                    {
+                        "id": "workbench.action.openIssueReporter",
+                        "label": "Сообщить о &&проблеме"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.openLicenseUrl",
+                        "label": "Просмотреть &&лицензию"
+                    },
+                    {
+                        "id": "workbench.action.openPrivacyStatementUrl",
+                        "label": "Заявле&&ние о конфиденциальности"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.toggleDevTools",
+                        "label": "Переключить средства разработчика"
+                    },
+                    {
+                        "id": "workbench.action.openProcessExplorer",
+                        "label": "Открыть &&обозреватель процессов"
+                    }
+                ]
+            },
+            "Preferences": {
+                "items": [
+                    {
+                        "id": "submenuitem.Profiles",
+                        "label": "Профили (По умолчанию)",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.profiles.actions.profileEntry.__default__profile__",
+                                    "label": "По умолчанию",
+                                    "checked": true
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.showProfileContents",
+                                    "label": "Показать содержимое…"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.createProfile",
+                                    "label": "Создать профиль…"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.deleteProfile",
+                                    "label": "Удалить профиль…",
+                                    "enabled": false
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.exportProfile",
+                                    "label": "Экспортировать профиль…"
+                                },
+                                {
+                                    "id": "workbench.profiles.actions.importProfile",
+                                    "label": "Импортировать профиль…"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "workbench.userDataSync.actions.turnOn",
+                        "label": "Включение синхронизации параметров…"
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "workbench.action.openSettings",
+                        "label": "&&Параметры"
+                    },
+                    {
+                        "id": "workbench.view.extensions",
+                        "label": "&&Расширения"
+                    },
+                    {
+                        "id": "workbench.action.openGlobalKeybindings",
+                        "label": "Сочетания клавиш"
+                    },
+                    {
+                        "id": "workbench.action.openSnippets",
+                        "label": "Настроить пользовательские фрагменты кода"
+                    },
+                    {
+                        "id": "submenuitem.ThemesSubMenu",
+                        "label": "&&Тема",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "workbench.action.selectTheme",
+                                    "label": "Цветовая тема"
+                                },
+                                {
+                                    "id": "workbench.action.selectIconTheme",
+                                    "label": "Тема значков файлов"
+                                },
+                                {
+                                    "id": "workbench.action.selectProductIconTheme",
+                                    "label": "Тема значков продукта"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "vscode.menubar.separator"
+                    },
+                    {
+                        "id": "settings.filterByOnline",
+                        "label": "&&Параметры веб-служб"
+                    }
+                ]
+            }
+        },
+        "keybindings": {
+            "workbench.action.quit": {
+                "label": "Cmd+Q",
+                "userSettingsLabel": "cmd+q"
+            },
+            "workbench.action.files.newUntitledFile": {
+                "label": "Cmd+N",
+                "userSettingsLabel": "cmd+n"
+            },
+            "welcome.showNewFileEntries": {
+                "label": "Ctrl+Alt+Cmd+N",
+                "userSettingsLabel": "ctrl+alt+cmd+n"
+            },
+            "workbench.action.newWindow": {
+                "label": "Shift+Cmd+N",
+                "userSettingsLabel": "shift+cmd+n"
+            },
+            "workbench.action.files.openFileFolder": {
+                "label": "Cmd+O",
+                "userSettingsLabel": "cmd+o"
+            },
+            "workbench.action.reopenClosedEditor": {
+                "label": "Shift+Cmd+T",
+                "userSettingsLabel": "shift+cmd+t"
+            },
+            "workbench.action.openRecent": {
+                "label": "Ctrl+R",
+                "userSettingsLabel": "ctrl+r"
+            },
+            "workbench.action.files.save": {
+                "label": "Cmd+S",
+                "userSettingsLabel": "cmd+s"
+            },
+            "workbench.action.files.saveAs": {
+                "label": "Shift+Cmd+S",
+                "userSettingsLabel": "shift+cmd+s"
+            },
+            "saveAll": {
+                "label": "Alt+Cmd+S",
+                "userSettingsLabel": "alt+cmd+s"
+            },
+            "workbench.action.closeActiveEditor": {
+                "label": "Cmd+W",
+                "userSettingsLabel": "cmd+w"
+            },
+            "workbench.action.closeWindow": {
+                "label": "Shift+Cmd+W",
+                "userSettingsLabel": "shift+cmd+w"
+            },
+            "undo": {
+                "label": "Cmd+Z",
+                "userSettingsLabel": "cmd+z"
+            },
+            "redo": {
+                "label": "Shift+Cmd+Z",
+                "userSettingsLabel": "shift+cmd+z"
+            },
+            "editor.action.clipboardCutAction": {
+                "label": "Cmd+X",
+                "userSettingsLabel": "cmd+x"
+            },
+            "editor.action.clipboardCopyAction": {
+                "label": "Cmd+C",
+                "userSettingsLabel": "cmd+c"
+            },
+            "editor.action.clipboardPasteAction": {
+                "label": "Cmd+V",
+                "userSettingsLabel": "cmd+v"
+            },
+            "actions.find": {
+                "label": "Cmd+F",
+                "userSettingsLabel": "cmd+f"
+            },
+            "editor.action.startFindReplaceAction": {
+                "label": "Alt+Cmd+F",
+                "userSettingsLabel": "alt+cmd+f"
+            },
+            "workbench.action.findInFiles": {
+                "label": "Shift+Cmd+F",
+                "userSettingsLabel": "shift+cmd+f"
+            },
+            "workbench.action.replaceInFiles": {
+                "label": "Shift+Cmd+H",
+                "userSettingsLabel": "shift+cmd+h"
+            },
+            "editor.action.commentLine": {
+                "label": "Cmd+/",
+                "userSettingsLabel": "cmd+/"
+            },
+            "editor.action.blockComment": {
+                "label": "Shift+Alt+A",
+                "userSettingsLabel": "shift+alt+a"
+            },
+            "editor.emmet.action.expandAbbreviation": {
+                "label": "Tab",
+                "userSettingsLabel": "tab"
+            },
+            "editor.action.selectAll": {
+                "label": "Cmd+A",
+                "userSettingsLabel": "cmd+a"
+            },
+            "editor.action.smartSelect.expand": {
+                "label": "Ctrl+Shift+Cmd+Right",
+                "userSettingsLabel": "ctrl+shift+cmd+right"
+            },
+            "editor.action.smartSelect.shrink": {
+                "label": "Ctrl+Shift+Cmd+Left",
+                "userSettingsLabel": "ctrl+shift+cmd+left"
+            },
+            "editor.action.copyLinesUpAction": {
+                "label": "Shift+Alt+Up",
+                "userSettingsLabel": "shift+alt+up"
+            },
+            "editor.action.copyLinesDownAction": {
+                "label": "Shift+Alt+Down",
+                "userSettingsLabel": "shift+alt+down"
+            },
+            "editor.action.moveLinesUpAction": {
+                "label": "Alt+Up",
+                "userSettingsLabel": "alt+up"
+            },
+            "editor.action.moveLinesDownAction": {
+                "label": "Alt+Down",
+                "userSettingsLabel": "alt+down"
+            },
+            "editor.action.insertCursorAbove": {
+                "label": "Alt+Cmd+Up",
+                "userSettingsLabel": "alt+cmd+up"
+            },
+            "editor.action.insertCursorBelow": {
+                "label": "Alt+Cmd+Down",
+                "userSettingsLabel": "alt+cmd+down"
+            },
+            "editor.action.insertCursorAtEndOfEachLineSelected": {
+                "label": "Shift+Alt+I",
+                "userSettingsLabel": "shift+alt+i"
+            },
+            "editor.action.addSelectionToNextFindMatch": {
+                "label": "Cmd+D",
+                "userSettingsLabel": "cmd+d"
+            },
+            "editor.action.selectHighlights": {
+                "label": "Shift+Cmd+L",
+                "userSettingsLabel": "shift+cmd+l"
+            },
+            "workbench.action.showCommands": {
+                "label": "Shift+Cmd+P",
+                "userSettingsLabel": "shift+cmd+p"
+            },
+            "workbench.action.toggleFullScreen": {
+                "label": "Ctrl+Cmd+F",
+                "userSettingsLabel": "ctrl+cmd+f"
+            },
+            "workbench.action.toggleZenMode": {
+                "label": "⌘K Z",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k z"
+            },
+            "workbench.action.toggleSidebarVisibility": {
+                "label": "Cmd+B",
+                "userSettingsLabel": "cmd+b"
+            },
+            "workbench.action.toggleAuxiliaryBar": {
+                "label": "Alt+Cmd+B",
+                "userSettingsLabel": "alt+cmd+b"
+            },
+            "workbench.action.togglePanel": {
+                "label": "Cmd+J",
+                "userSettingsLabel": "cmd+j"
+            },
+            "workbench.action.zoomIn": {
+                "label": "Cmd+=",
+                "userSettingsLabel": "cmd+="
+            },
+            "workbench.action.zoomOut": {
+                "label": "Cmd+-",
+                "userSettingsLabel": "cmd+-"
+            },
+            "workbench.action.zoomReset": {
+                "label": "⌘NumPad0",
+                "isNative": false,
+                "userSettingsLabel": "cmd+numpad0"
+            },
+            "workbench.action.splitEditorUp": {
+                "label": "⌘K ⌘\\",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+\\"
+            },
+            "workbench.action.toggleEditorGroupLayout": {
+                "label": "Alt+Cmd+0",
+                "userSettingsLabel": "alt+cmd+0"
+            },
+            "workbench.view.explorer": {
+                "label": "Shift+Cmd+E",
+                "userSettingsLabel": "shift+cmd+e"
+            },
+            "workbench.view.search": {
+                "label": "Shift+Cmd+F",
+                "userSettingsLabel": "shift+cmd+f"
+            },
+            "workbench.view.scm": {
+                "label": "Ctrl+Shift+G",
+                "userSettingsLabel": "ctrl+shift+g"
+            },
+            "workbench.view.debug": {
+                "label": "Shift+Cmd+D",
+                "userSettingsLabel": "shift+cmd+d"
+            },
+            "workbench.view.extensions": {
+                "label": "Shift+Cmd+X",
+                "userSettingsLabel": "shift+cmd+x"
+            },
+            "workbench.actions.view.problems": {
+                "label": "Shift+Cmd+M",
+                "userSettingsLabel": "shift+cmd+m"
+            },
+            "workbench.action.output.toggleOutput": {
+                "label": "Shift+Cmd+U",
+                "userSettingsLabel": "shift+cmd+u"
+            },
+            "workbench.debug.action.toggleRepl": {
+                "label": "Shift+Cmd+Y",
+                "userSettingsLabel": "shift+cmd+y"
+            },
+            "workbench.action.terminal.toggleTerminal": {
+                "label": "Ctrl+`",
+                "userSettingsLabel": "ctrl+`"
+            },
+            "editor.action.toggleWordWrap": {
+                "label": "Alt+Z",
+                "userSettingsLabel": "alt+z"
+            },
+            "workbench.action.navigateBack": {
+                "label": "Ctrl+-",
+                "userSettingsLabel": "ctrl+-"
+            },
+            "workbench.action.navigateForward": {
+                "label": "Ctrl+Shift+-",
+                "userSettingsLabel": "ctrl+shift+-"
+            },
+            "workbench.action.navigateToLastEditLocation": {
+                "label": "⌘K ⌘Q",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+q"
+            },
+            "workbench.action.nextEditor": {
+                "label": "Alt+Cmd+Right",
+                "userSettingsLabel": "alt+cmd+right"
+            },
+            "workbench.action.previousEditor": {
+                "label": "Alt+Cmd+Left",
+                "userSettingsLabel": "alt+cmd+left"
+            },
+            "workbench.action.nextEditorInGroup": {
+                "label": "⌘K ⌥⌘→",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k alt+cmd+right"
+            },
+            "workbench.action.previousEditorInGroup": {
+                "label": "⌘K ⌥⌘←",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k alt+cmd+left"
+            },
+            "workbench.action.focusFirstEditorGroup": {
+                "label": "Cmd+1",
+                "userSettingsLabel": "cmd+1"
+            },
+            "workbench.action.focusSecondEditorGroup": {
+                "label": "Cmd+2",
+                "userSettingsLabel": "cmd+2"
+            },
+            "workbench.action.focusThirdEditorGroup": {
+                "label": "Cmd+3",
+                "userSettingsLabel": "cmd+3"
+            },
+            "workbench.action.focusFourthEditorGroup": {
+                "label": "Cmd+4",
+                "userSettingsLabel": "cmd+4"
+            },
+            "workbench.action.focusFifthEditorGroup": {
+                "label": "Cmd+5",
+                "userSettingsLabel": "cmd+5"
+            },
+            "workbench.action.focusLeftGroup": {
+                "label": "⌘K ⌘←",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+left"
+            },
+            "workbench.action.focusRightGroup": {
+                "label": "⌘K ⌘→",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+right"
+            },
+            "workbench.action.focusAboveGroup": {
+                "label": "⌘K ⌘↑",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+up"
+            },
+            "workbench.action.focusBelowGroup": {
+                "label": "⌘K ⌘↓",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+down"
+            },
+            "workbench.action.quickOpen": {
+                "label": "Cmd+P",
+                "userSettingsLabel": "cmd+p"
+            },
+            "workbench.action.showAllSymbols": {
+                "label": "Cmd+T",
+                "userSettingsLabel": "cmd+t"
+            },
+            "workbench.action.gotoSymbol": {
+                "label": "Shift+Cmd+O",
+                "userSettingsLabel": "shift+cmd+o"
+            },
+            "editor.action.revealDefinition": {
+                "label": "F12",
+                "userSettingsLabel": "f12"
+            },
+            "editor.action.goToImplementation": {
+                "label": "Cmd+F12",
+                "userSettingsLabel": "cmd+f12"
+            },
+            "editor.action.goToReferences": {
+                "label": "Shift+F12",
+                "userSettingsLabel": "shift+f12"
+            },
+            "workbench.action.gotoLine": {
+                "label": "Ctrl+G",
+                "userSettingsLabel": "ctrl+g"
+            },
+            "editor.action.jumpToBracket": {
+                "label": "Shift+Cmd+\\",
+                "userSettingsLabel": "shift+cmd+\\"
+            },
+            "editor.action.marker.nextInFiles": {
+                "label": "F8",
+                "userSettingsLabel": "f8"
+            },
+            "editor.action.marker.prevInFiles": {
+                "label": "Shift+F8",
+                "userSettingsLabel": "shift+f8"
+            },
+            "editor.action.dirtydiff.next": {
+                "label": "Alt+F3",
+                "userSettingsLabel": "alt+f3"
+            },
+            "editor.action.dirtydiff.previous": {
+                "label": "Shift+Alt+F3",
+                "userSettingsLabel": "shift+alt+f3"
+            },
+            "workbench.action.debug.start": {
+                "label": "F5",
+                "userSettingsLabel": "f5"
+            },
+            "workbench.action.debug.run": {
+                "label": "Ctrl+F5",
+                "userSettingsLabel": "ctrl+f5"
+            },
+            "workbench.action.debug.stop": {
+                "label": "Shift+F5",
+                "userSettingsLabel": "shift+f5"
+            },
+            "workbench.action.debug.restart": {
+                "label": "Shift+Cmd+F5",
+                "userSettingsLabel": "shift+cmd+f5"
+            },
+            "workbench.action.debug.stepOver": {
+                "label": "F10",
+                "userSettingsLabel": "f10"
+            },
+            "workbench.action.debug.stepInto": {
+                "label": "F11",
+                "userSettingsLabel": "f11"
+            },
+            "workbench.action.debug.stepOut": {
+                "label": "Shift+F11",
+                "userSettingsLabel": "shift+f11"
+            },
+            "workbench.action.debug.continue": {
+                "label": "F5",
+                "userSettingsLabel": "f5"
+            },
+            "editor.debug.action.toggleBreakpoint": {
+                "label": "F9",
+                "userSettingsLabel": "f9"
+            },
+            "editor.debug.action.toggleInlineBreakpoint": {
+                "label": "Shift+F9",
+                "userSettingsLabel": "shift+f9"
+            },
+            "workbench.action.terminal.new": {
+                "label": "Ctrl+Shift+`",
+                "userSettingsLabel": "ctrl+shift+`"
+            },
+            "workbench.action.terminal.split": {
+                "label": "Cmd+\\",
+                "userSettingsLabel": "cmd+\\"
+            },
+            "workbench.action.tasks.build": {
+                "label": "Shift+Cmd+B",
+                "userSettingsLabel": "shift+cmd+b"
+            },
+            "workbench.action.keybindingsReference": {
+                "label": "⌘K ⌘R",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+r"
+            },
+            "workbench.action.openSettings": {
+                "label": "Cmd+,",
+                "userSettingsLabel": "cmd+,"
+            },
+            "workbench.action.openGlobalKeybindings": {
+                "label": "⌘K ⌘S",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+s"
+            },
+            "workbench.action.selectTheme": {
+                "label": "⌘K ⌘T",
+                "isNative": false,
+                "userSettingsLabel": "cmd+k cmd+t"
+            }
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1a1b26",
+    "windowSplash": {
+        "zoomLevel": 1,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#c0caf5",
+            "background": "#1a1b26",
+            "editorBackground": "#1a1b26",
+            "titleBarBackground": "#1d1f2d",
+            "activityBarBackground": "#1a1b26",
+            "sideBarBackground": "#1d1f2d",
+            "statusBarBackground": "#1d1f2d",
+            "statusBarNoFolderBackground": "#594186"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 28,
+            "activityBarWidth": 48,
+            "sideBarWidth": 256,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/Users/kematin/Library/Application Support/Code/Backups/1681556038042",
+            "uiState": {
+                "mode": 1,
+                "x": 0,
+                "y": 37,
+                "width": 1470,
+                "height": 919
+            }
+        },
+        "openedWindows": []
+    },
+    "window.experimental.useSandbox": true
+}

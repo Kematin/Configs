@@ -1,0 +1,57 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Tokyo Night AltSynt",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.autopep8",
+        "editor.formatOnType": true
+    },
+    "editor.fontSize": 14,
+    "window.zoomLevel": 1,
+    "files.autoSave": "onWindowChange",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "workbench.list.smoothScrolling": true,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "errorLens.excludeBySource": [
+        "Flake8(E501)",
+        "ts(1128)"
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j", "k"],
+            "after": ["esc"]
+        },
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        }
+    ],
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true
+    },
+    "indentRainbow.includedLanguages": ["ts", "js", "html", "css", "django-html"],
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 3,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+    },
+    "[django-html][css][html]": {
+        "editor.tabSize": 2
+    },
+    "terminal.integrated.commandsToSkipShell": [
+        "terminalTabs.createTerminal"
+    ],
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false
+}
