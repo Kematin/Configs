@@ -3,7 +3,8 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export TERM=screen-256color
+export SERVER_IP="194.135.20.182"
+alias connect_server="ssh root@$SERVER_IP"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -71,7 +72,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=($plugins git)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,10 +101,16 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python="python3"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="/opt/homebrew/opt/file-formula/bin:$PATH"
+
+# Created by `pipx` on 2023-12-08 12:33:13
+export PATH="$PATH:/home/kematin/.local/bin"
+
+alias bat="batcat"
+alias create_project="mkdir Project && cd Project && python3.10 -m venv venv && . ./venv/bin/activate && touch main.py"
+
+PATH=~/.console-ninja/.bin:$PATH
+eval $(thefuck --alias)
