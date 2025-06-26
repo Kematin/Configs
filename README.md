@@ -1,16 +1,8 @@
 # Neovim config by kematin
-#### My config functions
-
-- Lsp server
-- Git Highlighting
-- Markdown Preview
-- Autocomplete
-- Neotree
-- Telescope finder
 
 ### Download
 
-```
+```bash
 <!-- neovim -->
 sudo add-apt-repository ppa:neovim-ppa/unstable
 sudo apt-get update
@@ -31,9 +23,7 @@ nvm install 14.4.0
 npm install -g pyright
 ```
 
-Put init.vim to `~/.config/nvim/init.vim` folder.
-
-### How use lsp server
+### Lsp server
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -47,3 +37,14 @@ true > __init__.py
     "venvPath": ".."
 }
 ```
+
+### Soft, Utils need to install
+- neovim (lua+packer)
+- tmux (+tpm)
+- fish
+- bat
+- lazygit
+- vscode
+- btop
+
+
