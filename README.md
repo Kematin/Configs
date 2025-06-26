@@ -14,21 +14,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-### Lsp server
-```bash
-python3 -m venv venv
-source venv/bin/activate
-mdkir lsp_server && cd lsp_server && touch pyrightconfig.json
-true > __init__.py
-```
-> pyrightconfig.json
-```
-{
-    "venv": "venv",
-    "venvPath": ".."
-}
-```
-
 ### Soft, Utils need to install
 - neovim (lua+packer)
 - tmux (+tpm)
